@@ -1,8 +1,11 @@
 <script>
 	import TodoItem from '$lib/todo-item.svelte';
+    let title = "TODOS | New";
 </script>
-
-<h1>TODOS</h1>
+<svelte:head>
+    <title>{title}</title>
+</svelte:head>
+<h1>{title}</h1>
 <div class="form-input">
 	<form action="" method="">
 		<input type="text" name="text" area-label="Add a todo" placeholder="+ Tap to add todo" />
